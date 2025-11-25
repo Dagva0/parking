@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Parking System</h1>
+
+        <div class="form-box">
+            <h2>Машин оруулах</h2>
+            <input type="text" id="carNumber" placeholder="Регистрийн дугаар">
+            <button onclick="carEnter()">Оруулах</button>
+        </div>
+
+        <div class="form-box">
+            <h2>Машин гаргах</h2>
+            <input type="number" id="logId" placeholder="Log ID">
+            <input type="number" id="amount" placeholder="Төлбөр">
+            <button onclick="carLeave()">Гаргах</button>
+        </div>
+
+        <div class="list-box">
+            <h2>Зогсоолд байгаа машинууд</h2>
+            <button onclick="loadParking()">Шинэчлэх</button>
+            <table id="parkingTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Регистр</th>
+                        <th>Орох цаг</th>
+                        <th>Гарах цаг</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+</html>
